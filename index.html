@@ -1,0 +1,89 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Mike Fit"><meta name="theme-color" content="#0b6e4f">
+<title>Mike Fit</title>
+<link rel="apple-touch-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAIAAADdvvtQAAAEMUlEQVR4nO3dQY4TSxRE0QL1DJbDPnonTFkDe2M5LIBBSSnLFi27o/K9iMx7xvC/Hb79yjDhy7ef7wfwWV+7XwCyERAkBAQJAUFCQJAQECQEBAkBQUJAkBAQJAQECQFBQkCQEBAkBAQJAUFCQJAQECQEBAkBQUJAkBAQJAQECQFBQkCQEBAkBAQJAUFCQJAQECQEBMlb9wsw8uf39+d/8Y9ff+e9kiD7BvRSLs/89j2T2isgMZrn/+P7xLRFQFO7+fj/uHxJKwdU380Hr2HVktYMyCGdO+dLWi+jpQIy7ObOegdpkYD807mzzEFa4S8S4+oZcl/5kH2BFvgA0k9RakALpHMrN6PIR9hi9QyJ7ysvoMSVnxf37pIeYXHjfk7W4yzmAm1Sz5DyfjMCSlnzWhHvOiCgiB0n8X/v7gH5Lzib+QK+X6LNh6vk/LXa9AJRzyPPTUwDQgrHgDx/1BwYLmMXkOFGVtz28QrIbR1PVisZBWS1izmfrVwC8lkkhcliLgEhlEVAJj9McRx26w/IYYVc7es1B9T+/hfQu2H/BUK0zoA4P1dpXJILBElbQJyfa3Xt2RMQ9czQsiqPMEgaAuL8zFO/LRcIEgKCpDognl+zFS/MBYKkNCDOT43KnblAkBAQJHUB8fyqVLY2FwgSAoKkKCCeX/VqNucCQUJAkBAQJBUB8QWoS8HyXCBICAgSAoKEgCAhIEimB8QfwXrN3p8LBAkBQUJAkBAQJAQECQFBQkCQEBAkBAQJAUFCQJAQECQEBAkBQTI9IM9/a3gfs/fnAkFCQJAQECQEBAkBQVIREH8Q61KwPBcIEgKChIAgKQqIr0H1ajbnAkFCQJDUBcRTrFLZ2lwgSAgIktKAeIrVqNyZCwRJdUAcodmKF+YCQUJAkDQExFNsnvptuUCQ9ATEEZqhZdW2C0RD1+rak0cYJJ0BcYSu0rgkFwiS5oA4QrreDfsvEA0p2tfrD+gwWCGUw24WASGXS0AOP0xZTBZzCeiwWSSCz1ZGAR1OuzizWskroMNsHUNu+9gFdPht5MNwGceAEMQ0IMMftXaem7x1v4D/OvfiH30+XNM5mV6gwXm7GuYLuAd02C84lf97DwjoSNhxhoh3nRHQEbLmhVLer++X6EebfK1OSecUc4GGrH1fFffu8gI6Ald+UuL7SnqE3VrscZaYzik1oNMCGeWmc4p8hN3J/QxyX/mQfYGGuFO0QDqnRQI6jU/FtqRluhmWCmgwPEjrpXNaM6CTw0FatZth5YCG+pKW72bYIqDh9nO9PKZ9orm1V0C3Hj/vl5LaM5dH+wb0iCY+YYW/SEQjAoKEgCAhIEgICBICgoSAICEgSAgIEgKChIAgISBICAgSAoKEgCAhIEgICBICgoSAICEgSAgIEgKChIAgISBICAgSAoKEgCAhIEgICBICguQfq24GJu+RZdcAAAAASUVORK5CYII=">
+<link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAIAAADdvvtQAAAEMUlEQVR4nO3dQY4TSxRE0QL1DJbDPnonTFkDe2M5LIBBSSnLFi27o/K9iMx7xvC/Hb79yjDhy7ef7wfwWV+7XwCyERAkBAQJAUFCQJAQECQEBAkBQUJAkBAQJAQECQFBQkCQEBAkBAQJAUFCQJAQECQEBAkBQUJAkBAQJAQECQFBQkCQEBAkBAQJAUFCQJAQECQEBMlb9wsw8uf39+d/8Y9ff+e9kiD7BvRSLs/89j2T2isgMZrn/+P7xLRFQFO7+fj/uHxJKwdU380Hr2HVktYMyCGdO+dLWi+jpQIy7ObOegdpkYD807mzzEFa4S8S4+oZcl/5kH2BFvgA0k9RakALpHMrN6PIR9hi9QyJ7ysvoMSVnxf37pIeYXHjfk7W4yzmAm1Sz5DyfjMCSlnzWhHvOiCgiB0n8X/v7gH5Lzib+QK+X6LNh6vk/LXa9AJRzyPPTUwDQgrHgDx/1BwYLmMXkOFGVtz28QrIbR1PVisZBWS1izmfrVwC8lkkhcliLgEhlEVAJj9McRx26w/IYYVc7es1B9T+/hfQu2H/BUK0zoA4P1dpXJILBElbQJyfa3Xt2RMQ9czQsiqPMEgaAuL8zFO/LRcIEgKCpDognl+zFS/MBYKkNCDOT43KnblAkBAQJHUB8fyqVLY2FwgSAoKkKCCeX/VqNucCQUJAkBAQJBUB8QWoS8HyXCBICAgSAoKEgCAhIEimB8QfwXrN3p8LBAkBQUJAkBAQJAQECQFBQkCQEBAkBAQJAUFCQJAQECQEBAkBQTI9IM9/a3gfs/fnAkFCQJAQECQEBAkBQVIREH8Q61KwPBcIEgKChIAgKQqIr0H1ajbnAkFCQJDUBcRTrFLZ2lwgSAgIktKAeIrVqNyZCwRJdUAcodmKF+YCQUJAkDQExFNsnvptuUCQ9ATEEZqhZdW2C0RD1+rak0cYJJ0BcYSu0rgkFwiS5oA4QrreDfsvEA0p2tfrD+gwWCGUw24WASGXS0AOP0xZTBZzCeiwWSSCz1ZGAR1OuzizWskroMNsHUNu+9gFdPht5MNwGceAEMQ0IMMftXaem7x1v4D/OvfiH30+XNM5mV6gwXm7GuYLuAd02C84lf97DwjoSNhxhoh3nRHQEbLmhVLer++X6EebfK1OSecUc4GGrH1fFffu8gI6Ald+UuL7SnqE3VrscZaYzik1oNMCGeWmc4p8hN3J/QxyX/mQfYGGuFO0QDqnRQI6jU/FtqRluhmWCmgwPEjrpXNaM6CTw0FatZth5YCG+pKW72bYIqDh9nO9PKZ9orm1V0C3Hj/vl5LaM5dH+wb0iCY+YYW/SEQjAoKEgCAhIEgICBICgoSAICEgSAgIEgKChIAgISBICAgSAoKEgCAhIEgICBICgoSAICEgSAgIEgKChIAgISBICAgSAoKEgCAhIEgICBICguQfq24GJu+RZdcAAAAASUVORK5CYII=">
+<link rel="manifest" href="manifest.json">
+<style>
+*{box-sizing:border-box}body{margin:0;font-family:-apple-system,system-ui,sans-serif;background:#f3f5f2;color:#1b1b1b;font-size:18px;padding-bottom:90px}
+header{background:#0b6e4f;color:#fff;padding:calc(env(safe-area-inset-top) + 12px) 16px 12px}h1{margin:0;font-size:24px}
+.banner{background:#fff3cd;border-left:6px solid #e0a800;padding:10px 14px;margin:12px;border-radius:8px;font-size:15px}
+.card{background:#fff;margin:12px;padding:14px;border-radius:14px;box-shadow:0 1px 3px #0002}
+.card h3{margin:0 0 4px;font-size:20px}.m{color:#555;font-size:15px}.cue{color:#0b6e4f;font-size:15px;margin-top:6px}
+.done{opacity:.55;border-left:6px solid #2ecc71}
+button{font-size:18px;padding:14px 18px;border:0;border-radius:12px;background:#0b6e4f;color:#fff;margin:6px 6px 0 0}
+button.alt{background:#e7ece9;color:#0b6e4f}input{font-size:20px;padding:12px;width:110px;border:1px solid #bbb;border-radius:10px}
+nav{position:fixed;bottom:0;left:0;right:0;display:flex;background:#fff;border-top:1px solid #ccc;padding-bottom:env(safe-area-inset-bottom)}
+nav button{flex:1;margin:0;border-radius:0;background:#fff;color:#555;font-size:13px;padding:10px 2px}nav button.on{color:#0b6e4f;font-weight:700}
+nav b{display:block;font-size:22px}.seg{display:flex;margin:12px}.seg button{flex:1}
+.hist{font-size:14px;color:#666}table{width:100%;font-size:15px;border-collapse:collapse}td{padding:4px;border-bottom:1px solid #eee}
+.bar{height:22px;background:#e7ece9;border-radius:11px;overflow:hidden}.bar div{height:100%;background:#2ecc71}
+label.ck{display:inline-flex;align-items:center;gap:6px;margin:6px 12px 0 0;font-size:17px}label.ck input{width:28px;height:28px}
+</style></head><body>
+<header><h1>Mike Fit</h1><div id="sub" style="font-size:15px;opacity:.9"></div></header>
+<div class="banner"><b>Knee rules (Suncoast Orthopaedic):</b> NO squats, leg lifts/extensions, deep knee bends, leg press (ask doctor/PT first), stair climber, lunges or jumping. Keep knee bends shallow. Pain = stop.<br><b>Telmisartan:</b> don't hold your breath or strain hard &mdash; breathe out on the push. Drink water.</div>
+<main id="app"></main>
+<nav id="nav"></nav>
+<script>
+const T=new Date().toISOString().slice(0,10);
+const S=JSON.parse(localStorage.getItem('mikefit')||'{}');S.w=S.w||[];S.log=S.log||{};S.knee=S.knee||{};S.goal=S.goal||null;S.done=S.done||{};
+const save=()=>localStorage.setItem('mikefit',JSON.stringify(S));
+const E=(n,m,sr,c)=>({n,m,sr,c});
+const W={
+A:[E('Warm-up: Recumbent bike','Matrix recumbent bike','5 min easy','Seat far back so knee barely bends.'),
+E('Chest press','Cybex chest press','2-3 x 10-12','Breathe out as you push.'),
+E('Lat pulldown','Cybex lat pulldown','2-3 x 10-12','Pull to upper chest, slow up.'),
+E('Cable woodchop (high to low)','Cable station, rope/handle','2 x 10 each side','Turn from hips and trunk; feet planted, knees soft not bent.'),
+E('Band external rotation','Resistance band','2 x 15 each arm','Elbow at your side. Protects tennis shoulder.'),
+E('Hip abduction','Cybex hip abduction','2-3 x 12','Slow out, slow in. Side-to-side court stability.'),
+E('Back extension (partial)','Back extension bench','2 x 10','Go only to straight body, no over-arching.'),
+E('Plank','Floor / mat','3 x 20-40 sec','Breathe normally the whole time.'),
+E('Cool-down: Arc Trainer or bike','Cybex Arc Trainer','5-10 min easy','Low incline on the Arc.')],
+B:[E('Warm-up: Arc Trainer','Cybex Arc Trainer','5 min easy','Low incline, smooth.'),
+E('Shoulder press','Cybex shoulder press','2-3 x 10-12','Breathe out on the press. Moderate weight.'),
+E('Seated row','Cybex seated row','2-3 x 10-12','Squeeze shoulder blades together.'),
+E('Rear delt fly','Cybex pec fly / rear delt','2 x 12','Light. Good for tennis shoulder balance.'),
+E('Cable rotation (Pallof press)','Cable station, handle','2 x 10 each side','Press straight out and resist the twist.'),
+E('Hip adduction','Cybex hip adduction','2 x 12','Easy range, no pinching at knee.'),
+E('Arm curl','Cybex arm curl or dumbbells','2 x 12','Elbows still.'),
+E('Triceps pushdown','Cable station, rope','2 x 12','Elbows pinned to sides.'),
+E('Farmer carry','Dumbbells or kettlebells','3 x 30-40 steps','Stand tall; walk normally. Grip for the racquet.'),
+E('Cool-down: Recumbent bike','Matrix recumbent bike','5-10 min easy','')],
+C:[E('Zone 2 cardio','Recumbent bike or Arc Trainer','25-40 min','Easy pace: you can still talk in sentences.'),
+E('Stretch + foam roll','Foam roller, mat','5-10 min','Roll calves, hips, upper back. Not on the kneecap.')],
+L:[E('Single-leg calf raise (straight knee)','Floor or step edge, hold rail','LEFT 3 x 12, right 2 x 12','Knee straight, not locked. Slow up and down.'),
+E('Static quad sets','Mat, leg straight','LEFT 10 x 10-sec holds, right 1 round','Tighten thigh, press back of knee down. Breathe.'),
+E('Band terminal knee extension','Band anchored behind knee','LEFT 3 x 15, right 2 x 15','Tiny range only: slightly bent to straight. No deep bend.'),
+E('Single-leg hamstring curl (light)','Hamstring curl machine','LEFT 3 x 12, right 2 x 12','Light weight, smooth. Stop if kneecap aches.'),
+E('Single-leg recumbent bike','Matrix recumbent bike, seat high','LEFT 4 x 1 min, right 3 x 1 min','Easy resistance; other foot resting.')],
+I:[E('Interval bike','Matrix recumbent bike','5 min warm-up, then 6 x (30 sec hard / 90 sec easy), 5 min cool-down','Push with resistance, not huge knee bend. Breathe!')]};
+const KNEE=[['Single quad stretch','Standing, hold a wall, gentle pull, 20-30 sec. Stop if kneecap hurts.'],['Hamstring stretch','Leg straight on bench or floor, lean from hips, 20-30 sec.'],['Static quads','Leg straight, tighten thigh, push back of knee down, hold 5 sec.'],['T-exercise','As shown by your doctor.']];
+const REC=['Baduanjin Qigong, 15-20 min (good for blood pressure and sleep): Hold Up the Heavens; Draw the Bow; Separate Heaven and Earth; Look Back; Sway Head and Tail (gently, shallow knees); Punch with Angry Eyes; Touch Toes (soft knees); Rise on Toes','Stretch: calves, hip flexors (standing), chest doorway, upper back, neck rolls','Foam roll: upper back, glutes, calves (not on kneecap)','Ice knees 30 min after tennis'];
+let tab=localStorage.getItem('mftab')||'gym',day=S.lastDay||'A';
+const tabs=[['gym','🏋️','Gym'],['knee','🦵','Knee'],['weight','⚖️','Weight'],['rec','🧘','Recovery'],['hist','📋','History']];
+function nav(){document.getElementById('nav').innerHTML=tabs.map(t=>`<button class="${t[0]==tab?'on':''}" onclick="go('${t[0]}')"><b>${t[1]}</b>${t[2]}</button>`).join('')}
+function go(t){tab=t;localStorage.setItem('mftab',t);render();scrollTo(0,0)}
+function last(n){for(const d of Object.keys(S.log).sort().reverse())for(const r of S.log[d])if(r.n==n&&r.wt)return r.wt+' lb ('+d.slice(5)+')';return''}
+function gym(){let h=(day=='L'?`<div class="card"><h3>Left Leg Catch-Up</h3><div class="m">Left quad and calf are smaller since the ACL repair. Do the left leg first with one extra set. Add after Strength A or B, 2-3x/week. All knee rules still apply. Ask your doctor/PT before ANY leg press.</div></div>`+circ():'')+`<div class="card m">Plan each week: Strength A, Strength B (3 days, alternate) &bull; Zone 2 cardio 2-3 days &bull; 1 interval day. Moderate weight: last 2 reps hard but clean.</div><div class="seg">${[['A','Str A'],['B','Str B'],['L','Left Leg'],['C','Cardio'],['I','Intervals']].map(x=>`<button class="${day==x[0]?'':'alt'}" onclick="setDay('${x[0]}')">${x[1]}</button>`).join('')}</div>`;
+const dn=S.done[T]||[];W[day].forEach((e,i)=>{const id=day+i,ok=dn.includes(id);h+=`<div class="card ${ok?'done':''}"><h3>${e.n}</h3><div class="m">${e.m} &bull; <b>${e.sr}</b></div>${e.c?`<div class="cue">🦵 ${e.c}</div>`:''}<div class="hist">${last(e.n)?'Last: '+last(e.n):''}</div><input id="w${id}" inputmode="decimal" placeholder="lb/min"> <button onclick="logEx('${day}',${i})">${ok?'✓ Done':'Log ✓'}</button></div>`});return h}
+function circ(){S.c=S.c||[];const l=S.c[S.c.length-1];return `<div class="card"><h3>Size tracker (optional)</h3><div class="m">Measure same spot each time (thigh 6 in above kneecap, calf widest). Inches.</div><input id="ct" placeholder="L thigh"><input id="crt" placeholder="R thigh"><input id="cc" placeholder="L calf"><input id="crc" placeholder="R calf"><br><button onclick="addC()">Save</button><div class="hist">${S.c.slice(-5).reverse().map(x=>`${x.d}: thigh L ${x.lt}/R ${x.rt}, calf L ${x.lc}/R ${x.rc}`).join('<br>')}</div></div>`}
+function addC(){const g=i=>document.getElementById(i).value;S.c=S.c||[];S.c.push({d:T,lt:g('ct'),rt:g('crt'),lc:g('cc'),rc:g('crc')});save();render()}
+function setDay(d){day=d;S.lastDay=d;save();render()}
+function logEx(d,i){const e=W[d][i],v=document.getElementById('w'+d+i).value;(S.log[T]=S.log[T]||[]).push({n:e.n,wt:v,t:Date.now()});(S.done[T]=S.done[T]||[]);if(!S.done[T].includes(d+i))S.done[T].push(d+i);save();render()}
+function knee(){const k=S.knee[T]||{};let h=`<div class="card"><h3>Doctor's knee exercises</h3><div class="m">5 reps each, 3 times a day. Tap a box after each round.</div></div>`;KNEE.forEach((x,i)=>{h+=`<div class="card"><h3>${x[0]}</h3><div class="cue">${x[1]}</div>${[0,1,2].map(r=>`<label class="ck"><input type="checkbox" ${k[i+'_'+r]?'checked':''} onchange="kck('${i}_${r}',this.checked)">${['AM','Mid','PM'][r]}</label>`).join('')}</div>`});return h+`<div class="card"><b>🧊 After tennis:</b> ice knees 30 minutes.</div>`}
+function kck(id,v){(S.knee[T]=S.knee[T]||{})[id]=v;save()}
+function weight(){const w=S.w.slice().sort((a,b)=>a.d<b.d?-1:1);let h=`<div class="card"><h3>Log today's weight</h3><input id="wt" inputmode="decimal" placeholder="lb"> <button onclick="addW()">Save</button><div class="m" style="margin-top:8px">Goal: lose 10-11 lb in ~6 weeks (1.5-2 lb/week). Weigh in the morning, same time.</div></div>`;
+if(w.length){const s=w[0].v,c=w[w.length-1].v,g=S.goal||s-10.5,p=Math.max(0,Math.min(100,(s-c)/(s-g)*100));h+=`<div class="card"><h3>${(s-c).toFixed(1)} lb lost of ${(s-g).toFixed(1)}</h3><div class="bar"><div style="width:${p}%"></div></div><div class="m">Start ${s} &bull; Now ${c} &bull; Goal ${g.toFixed(1)}</div><canvas id="ch" width="600" height="260" style="width:100%;margin-top:10px"></canvas><button class="alt" onclick="setG()">Change goal</button></div><div class="card"><table>${w.slice().reverse().map(x=>`<tr><td>${x.d}</td><td>${x.v} lb</td><td><button class="alt" style="padding:4px 10px;font-size:14px" onclick="delW('${x.d}')">✕</button></td></tr>`).join('')}</table></div>`}
+return h+`<div class="card m">Food does most of the work: protein at every meal, more vegetables, fewer chips/sweets/alcohol, water before meals.</div>`}
+function addW(){const v=parseFloat(document.getElementById('wt').value);if(!v)return;S.w=S.w.filter(x=>x.d!=T);S.w.push({d:T,v});save();render()}
+function delW(d){S.w=S.w.filter(x=>x.d!=d);save();render()}
+function setG(){const g=parseFloat(prompt('Goal weight (lb)?'));if(g){S.goal=g;save();render()}}
+function chart(){const c=document.getElementById('ch');if(!c)return;const w=S.w.slice().sort((a,b)=>a.d<b.d?-1:1),x=c.getContext('2d'),vs=w.map(a=>a.v).concat([S.goal||w[0].v-10.5]),mn=Math.min(...vs)-1,mx=Math.max(...vs)+1,Y=v=>240-(v-mn)/(mx-mn)*220,X=i=>30+i*(550/Math.max(1,w.length-1));x.strokeStyle='#e0a800';x.setLineDash([6,6]);x.beginPath();x.moveTo(30,Y(vs[vs.length-1]));x.lineTo(590,Y(vs[vs.length-1]));x.stroke();x.setLineDash([]);x.strokeStyle='#0b6e4f';x.lineWidth=4;x.beginPath();w.forEach((a,i)=>i?x.lineTo(X(i),Y(a.v)):x.moveTo(X(i),Y(a.v)));x.stroke();x.fillStyle='#0b6e4f';w.forEach((a,i)=>{x.beginPath();x.arc(X(i),Y(a.v),6,0,7);x.fill()})}
+function rec(){return REC.map(r=>`<div class="card">${r}</div>`).join('')}
+function hist(){const ds=Object.keys(S.log).sort().reverse();if(!ds.length)return'<div class="card">No workouts logged yet.</div>';return ds.map(d=>`<div class="card"><h3>${d}</h3><table>${S.log[d].map(r=>`<tr><td>${r.n}</td><td>${r.wt||''}</td></tr>`).join('')}</table></div>`).join('')}
+function render(){nav();document.getElementById('sub').textContent=new Date().toDateString();document.getElementById('app').innerHTML={gym,knee,weight,rec,hist}[tab]();if(tab=='weight')chart()}
+render();
+</script></body></html>
